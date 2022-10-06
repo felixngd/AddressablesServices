@@ -5,6 +5,9 @@ namespace Shared.Sources.Collections
 {
     public class UDictionarySo<TKey, TValue> : DictionarySo<TKey, TValue>
     {
+        #if ODIN_INSPECTOR
+        [Sirenix.OdinInspector.DrawWithUnity]
+        #endif
         [SerializeField]
         private UDictionary<TKey, TValue> _dictionary;
 
