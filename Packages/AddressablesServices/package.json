@@ -1,6 +1,6 @@
 {
   "name": "com.dre0dru.addressables.services",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "displayName": "Addressables Services",
   "description": "Strongly typed Addressables services for async/await workflow using UniTask:\n - Assets Loaders\n - Assets Donwloaders",
   "unity": "2020.3",
