@@ -23,13 +23,6 @@
         "com.unity.addressables": "1.18.19"
       }
     },
-    "com.dre0dru.shared.sources": {
-      "version": "https://github.com/dre0dru/Shared.Sources.git?path=/Packages/Shared.Sources",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "028ef9d98ba1268b0c705f00cf8b1cf5d7fee2b4"
-    },
     "com.jeffjadulco.guidregenerator": {
       "version": "https://github.com/jeffjadulco/unity-guid-regenerator.git",
       "depth": 0,
@@ -65,7 +58,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.14",
+      "version": "3.0.15",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -74,7 +67,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.15",
+      "version": "2.0.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -90,7 +83,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.3.0",
+      "version": "1.4.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -106,7 +99,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.19.6",
+      "version": "1.20.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

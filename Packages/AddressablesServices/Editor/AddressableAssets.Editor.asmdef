@@ -2,7 +2,8 @@
     "name": "AddressableAssets.Editor",
     "rootNamespace": "AddressableAssets",
     "references": [
-        "GUID:0a1e08ec355927740b1556caf7d00aae"
+        "TNRD.ScriptingDefineUtility",
+        "Shared.Resources.Editor"
     ],
     "includePlatforms": [
         "Editor"

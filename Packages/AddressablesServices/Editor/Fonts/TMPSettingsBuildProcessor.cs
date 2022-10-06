@@ -1,10 +1,10 @@
-#if TEXTMESHPRO && SHARED_SOURCES
+#if TEXTMESHPRO
 
 using System.IO;
-using Shared.Sources.Editor;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
+using Shared.Sources.Editor;
 
 namespace AddressableAssets.Editor.Fonts
 {

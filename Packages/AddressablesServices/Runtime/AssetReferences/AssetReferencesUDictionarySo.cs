@@ -1,5 +1,3 @@
-#if SHARED_SOURCES
-
 using Shared.Sources.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -12,5 +10,3 @@ namespace AddressableAssets.AssetReferences
 
     }
 }
-
-#endif
