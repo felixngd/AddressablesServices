@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/felixngd/AddressablesServices/compare/v1.1.0...v1.1.1) (2022-10-06)
+
+
+### Bug Fixes
+
+* minor bug fixed ([1dcee30](https://github.com/felixngd/AddressablesServices/commit/1dcee306971e803a90284867ada609c0a1ba7757))
+
 # [1.1.0](https://github.com/felixngd/AddressablesServices/compare/v1.0.0...v1.1.0) (2022-10-06)
 
 
