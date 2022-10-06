@@ -1,5 +1,5 @@
 {
-    "name": "Shared.Resources.Editor",
+    "name": "Shared.Sources.Editor",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [
