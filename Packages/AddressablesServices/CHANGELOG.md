@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/felixngd/AddressablesServices/compare/v1.1.1...v1.1.2) (2022-10-06)
+
+
+### Bug Fixes
+
+* fix odin inspector support to draw AssetReferenceT ([43b3ddc](https://github.com/felixngd/AddressablesServices/commit/43b3ddc7e16c72697b56a7d192ae0b932894b137))
+
 ## [1.1.1](https://github.com/felixngd/AddressablesServices/compare/v1.1.0...v1.1.1) (2022-10-06)
 
 
