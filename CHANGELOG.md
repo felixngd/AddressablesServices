@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/felixngd/AddressablesServices/compare/v1.0.0...v1.1.0) (2022-10-06)
+
+
+### Features
+
+* Add some dependency class directly into the package ([0b78e84](https://github.com/felixngd/AddressablesServices/commit/0b78e841ba1631bc2ddef284a4ff3d19f56008ad))
+
 # 1.0.0 (2022-10-06)
 
 
