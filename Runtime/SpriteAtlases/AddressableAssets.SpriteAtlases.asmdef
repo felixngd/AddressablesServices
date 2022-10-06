@@ -7,7 +7,7 @@
         "GUID:f51ebe6a0ceec4240a699833d6309b23",
         "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
         "GUID:58bd4bc4ec55f6d4d8c86b92b274cc3a",
-        "GUID:ed27a03d91d1b074dbc6bc2bc16ab73a"
+        "GUID:d13184ca9962044b1b4102eae1a81836"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -17,11 +17,6 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [
-        {
-            "name": "com.dre0dru.shared.sources",
-            "expression": "",
-            "define": "SHARED_SOURCES"
-        },
         {
             "name": "jp.hadashikick.vcontainer",
             "expression": "",

@@ -1,5 +1,3 @@
-#if SHARED_SOURCES
-
 using AddressableAssets.AssetReferences;
 using UnityEngine.AddressableAssets;
 using UnityEngine.U2D;
@@ -12,5 +10,3 @@ namespace AddressableAssets.SpriteAtlases
             this[spriteAtlasName];
     }
 }
-
-#endif

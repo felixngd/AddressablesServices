@@ -1,4 +1,4 @@
-#if TEXTMESHPRO && SHARED_SOURCES
+#if TEXTMESHPRO
 
 using Shared.Sources.Collections;
 using TMPro;
