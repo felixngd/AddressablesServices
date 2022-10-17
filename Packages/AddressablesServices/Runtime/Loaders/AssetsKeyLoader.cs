@@ -6,20 +6,19 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace AddressableAssets.Loaders
 {
-    public sealed class AssetsReferenceLoader<TAsset> : IAssetsReferenceLoader<TAsset> where TAsset : Object
+    public sealed class AssetsKeyLoader<TAsset> : IAssetsKeyLoader<TAsset> where TAsset : Object
     {
         private readonly Dictionary<object, AsyncOperationHandle<TAsset>> _operationHandles;
 
         #if UNITY_2020_3_OR_NEWER
         [UnityEngine.Scripting.RequiredMember]
         #endif
-        public AssetsReferenceLoader() =>
+        public AssetsKeyLoader() =>
             _operationHandles = new Dictionary<object, AsyncOperationHandle<TAsset>>();
 
-        public UniTask PreloadAssetAsync(AssetReferenceT<TAsset> key) =>
-            LoadAssetAsync(key);
+        public UniTask PreloadAssetAsync(string key) => LoadAssetAsync(key);
 
-        public async UniTask<TAsset> LoadAssetAsync(AssetReferenceT<TAsset> key)
+        public async UniTask<TAsset> LoadAssetAsync(string key)
         {
             var handle = GetLoadHandle(key);
 
@@ -30,14 +29,14 @@ namespace AddressableAssets.Loaders
             catch
             {
                 Addressables.Release(handle);
-                _operationHandles.Remove(key.RuntimeKey);
+                _operationHandles.Remove(key);
                 throw;
             }
         }
 
-        public bool IsAssetLoaded(AssetReferenceT<TAsset> key)
+        public bool IsAssetLoaded(string key)
         {
-            if (_operationHandles.TryGetValue(key.RuntimeKey, out var handle))
+            if (_operationHandles.TryGetValue(key, out var handle))
             {
                 return handle.IsDone;
             }
@@ -45,14 +44,14 @@ namespace AddressableAssets.Loaders
             return false;
         }
 
-        public TAsset GetAsset(AssetReferenceT<TAsset> key) =>
-            _operationHandles[key.RuntimeKey].Result;
+        public TAsset GetAsset(string key) =>
+            _operationHandles[key].Result;
 
-        public bool TryGetAsset(AssetReferenceT<TAsset> key, out TAsset asset)
+        public bool TryGetAsset(string key, out TAsset asset)
         {
             asset = default;
 
-            if (_operationHandles.TryGetValue(key.RuntimeKey, out var handle))
+            if (_operationHandles.TryGetValue(key, out var handle))
             {
                 if (handle.IsDone)
                 {
@@ -65,12 +64,12 @@ namespace AddressableAssets.Loaders
             return false;
         }
 
-        public void UnloadAsset(AssetReferenceT<TAsset> key)
+        public void UnloadAsset(string key)
         {
-            if (_operationHandles.TryGetValue(key.RuntimeKey, out var handle))
+            if (_operationHandles.TryGetValue(key, out var handle))
             {
                 Addressables.Release(handle);
-                _operationHandles.Remove(key.RuntimeKey);
+                _operationHandles.Remove(key);
             }
         }
 
@@ -84,12 +83,12 @@ namespace AddressableAssets.Loaders
             _operationHandles.Clear();
         }
 
-        private AsyncOperationHandle<TAsset> GetLoadHandle(AssetReferenceT<TAsset> key)
+        private AsyncOperationHandle<TAsset> GetLoadHandle(string key)
         {
-            if (!_operationHandles.TryGetValue(key.RuntimeKey, out var handle))
+            if (!_operationHandles.TryGetValue(key, out var handle))
             {
                 handle = Addressables.LoadAssetAsync<TAsset>(key);
-                _operationHandles.Add(key.RuntimeKey, handle);
+                _operationHandles.Add(key, handle);
             }
 
             return handle;
