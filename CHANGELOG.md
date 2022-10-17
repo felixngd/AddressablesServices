@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/felixngd/AddressablesServices/compare/v1.1.3...v1.2.0) (2022-10-17)
+
+
+### Features
+
+* Add AssetsKeyLoader ([7a7a86a](https://github.com/felixngd/AddressablesServices/commit/7a7a86aed3600e8fda51a4156238deb6fbe3050a))
+
 ## [1.1.3](https://github.com/felixngd/AddressablesServices/compare/v1.1.2...v1.1.3) (2022-10-06)
 
 
