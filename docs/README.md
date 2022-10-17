@@ -9,16 +9,16 @@ This package can be installed as a Unity package from git url.
 ### Latest release
 - Add following line in `Packages/manifest.json`:
 ```
-"com.dre0dru.addressables.services": "https://github.com/dre0dru/AddressablesServices.git#upm",
+"com.dre0dru.addressables.services": "https://github.com/felixngd/AddressablesServices.git#upm",
 ```
 - Use `Window/Package Manager/Add package from git URL...` in Unity:
 ```
-https://github.com/dre0dru/AddressablesServices.git#upm
+https://github.com/felixngd/AddressablesServices.git#upm
 ```
 
 ### Development branch variants
 ```
-https://github.com/dre0dru/AddressablesServices.git?path=/Packages/AddressablesServices
+https://github.com/felixngd/AddressablesServices.git?path=/Packages/AddressablesServices
 ```
 
 ## Dependencies
@@ -28,7 +28,7 @@ This package has following dependencies that must be present for package to comp
 ### Optional
 - [ScriptingDefineUtility](https://github.com/Thundernerd/Unity3D-ScriptingDefineUtility) enables full logs switch for `Addressables` under `Window->Asset Management->Addressables->Logs`
 - [VContainer](https://github.com/hadashiA/VContainer) - optional extension methods for bindings
-- [Shared.Sources](https://github.com/dre0dru/Shared.Sources) used for implementations of  interfaces in several modules, interfaces are not dependent on this package
+
 
 ## Loaders
 Generic type-safe assets loader.
